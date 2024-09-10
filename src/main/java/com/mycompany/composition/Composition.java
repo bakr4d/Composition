@@ -12,11 +12,9 @@ public class Composition {
 
     public static void main(String[] args) {
         
-        Car c1= new Car();
-        c1.setColor("blue");
-        System.out.println("the color for this Car is "+c1.getColor());
-        
-        
-    }
+      Engine e =new Engine ("12cc","Germany",100);    
+      Car c = new Car (e);
+        System.out.println("The Car Engine Type is from "+c.getMyEngine().getType());
 
     }
+}
