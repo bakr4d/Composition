@@ -16,21 +16,42 @@ public class Car {
           private String model;
           //
           //
-          // I want to made this relation   ''CAR has A engine'' 
+          // I want to made this relation   ''CAR has An engine'' 
           //
           //
+          private Engine myEngine;
+          
+          
+          
+          
           public Car (){
               
           }// a default constructor
 
-    public Car(int speed, String color, boolean isHatcheba, String model) { // a constructor 
+    public Car(int speed, String color, boolean isHatcheba, String model,Engine myEngine) { // a constructor 
         this.speed = speed;
         this.color = color;
         this.isHatcheba = isHatcheba;
         this.model = model;
+        this.myEngine=myEngine;
+    }
+
+    public Car(Engine myEngine) {
+        this.myEngine = myEngine;
     }
     
+    
     // Setter and getter 
+
+    public Engine getMyEngine() {
+        return myEngine;
+    }
+
+    public void setMyEngine(Engine myEngine) {
+        this.myEngine = myEngine;
+    }
+    
+    
     
       public void setSpeed(int speed) {
         this.speed = speed;
